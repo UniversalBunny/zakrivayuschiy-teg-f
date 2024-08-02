@@ -171,6 +171,14 @@
   opacity: 50%;
 }
 
+@supports (text-stroke: 1px var(--shadow-color)) or (-webkit-text-stroke: 1px var(--shadow-color)) {
+  .card__image-label {
+      -webkit-text-stroke: 1px var(--shadow-color);
+      text-stroke: 1px var(--shadow-color);
+      text-shadow: none;
+  }
+}
+
 .card__content {
   display: grid;
   gap: 25px;
@@ -197,7 +205,6 @@
   color: currentColor;
   padding: 0;
   background: transparent;
-  border: none;
   cursor: pointer;
 }
 
@@ -234,19 +241,9 @@
   fill: var(--accent-color);
 }
 
-.core {
-  fill: transparent;
-  transition: fill 0.3s linear;
-}
-
 .card__icon-button:active .core {
   transition: fill 0.3s linear;
   fill: var(--fill-color);
-}
-
-.main-body {
-  fill: transparent;
-  transition: fill 0.3s linear;
 }
 
 .card__icon-button:active .main-body {
@@ -318,7 +315,7 @@
   transition: 0.5s ease-in-out;
 }
 
-.button:hover::before{
+.button:hover::before {
   transform: scaleX(1);
   transition: 0.5s ease-in-out;
 }
@@ -378,7 +375,7 @@
   overflow: hidden;
 }
 
-.dialog::backdrop{
+.dialog::backdrop {
   background-color: black;
   opacity: 0.75;
 }
@@ -455,9 +452,6 @@
 
   .save__button {
     flex-direction: column;
-  }
-
-  .save__button {
     inline-size: 310px;
     block-size: 80px;
   }
