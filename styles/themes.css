@@ -11,7 +11,6 @@
     --bold-weight: 700;
     --thin-weight: 400;
     --repeating-color-first:#d3d3d3;
-    --repeating-color-second: transparent;
     --linear-color-start:#e7e7e7;
     --linear-color-end: #1a1a1a;
     --fill-color:#FF0000;
@@ -26,7 +25,6 @@
     --bold-weight: 785;
     --thin-weight: 465;
     --repeating-color-first:#000;
-    --repeating-color-second: transparent;
     --linear-color-start:#007f0c;
     --linear-color-end: #004306;
     --fill-color:#FF0000;
@@ -42,7 +40,6 @@
         --bold-weight: 785;
         --thin-weight: 465;
         --repeating-color-first:#000;
-        --repeating-color-second: transparent;
         --linear-color-start:#007f0c;
         --linear-color-end: #004306;
         --fill-color:#FF0000;
